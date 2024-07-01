@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: sneakers-db
+    image: postgres
+    environment:
+      POSTGRES_DB: sneakersDb
+      POSTGRES_USER: ${USER}
+      POSTGRES_PASSWORD: ${PASSWORD}
+
+  web:
+    container_name: sneakers-back-end
+    build: ./back-end/
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./back-end/:/usr/src/app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    environment:
+      USER: ${USER}
+      PASSWORD: ${PASSWORD}
+      HOST: db
+      PORT: 5432
+
+  frontend:
+    container_name: sneakers-front-end
+    build: ./front-end/
+    volumes:
+      - ./front-end/:/app
+      - /app/node_modules
+    ports:
+      - 5173:5173
+
+volumes:
+  postgres_data:
