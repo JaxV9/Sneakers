@@ -1,14 +1,19 @@
-import { Provider } from 'react-redux'
-import { store } from './stateManagement/store'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Layout } from './Layout'
+import { Home } from './features/Home'
 
 function App() {
 
 
   return (
     <>
-      <Provider store={store}>
-          Hello
-      </Provider>
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }

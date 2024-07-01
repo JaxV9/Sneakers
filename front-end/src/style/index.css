@@ -6,6 +6,25 @@
 }
 
 .logo{
-    max-width: 50px;
+    max-width: 75px;
 }
 
+.page-header {
+    /* padding: 2.5rem 5rem 0; */
+    height: 85px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.page-footer {
+    /* padding: 2.5rem 5rem 0; */
+    height: 85px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.header-title{
+    text-transform: uppercase;
+}
