@@ -8,13 +8,13 @@ L'architecture suivante est un diagramme représentant le fonctionnement du proj
 
 De plus si nous voulons rajouter des systèmes pour se connecter à ces différents bloc nous pouvons le faire (par exemple développer une application mobile en `SWIFT` ou `Kotlin` ou tout autre logiciel de création d'application dite web app tel que `React Native` ou encore `Flutr` sera donc possible, uniqument une connexion sera nécessaire).
 
-<img src="./">
+<img src="./assets/dataflow.png">
 
 ### Choix technique
 
 Pour ce qui est des choix techniques, nous sommes partie sur plusieurs technologies avangardistes et au goût du jour dans l'objectif de proposer au client la meilleur expérience d'utilisation possible.
 
-<img src="./">
+<img src="./assets/usedstack.png">
 
 #### Choix front-end
 
