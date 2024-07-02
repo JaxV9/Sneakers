@@ -1,5 +1,16 @@
 .flex-container{
     display:flex;
     align-items: center;
+    justify-content:center ;
+    & .flex-vertical {
+        flex-direction: column;
+    }
+    & .flex-horizontal {
+        flex-direction: row;
+    }
+}
+
+.flex-vertical {
+    flex-direction: column;
 }
 
