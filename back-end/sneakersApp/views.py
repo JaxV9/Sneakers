@@ -18,10 +18,15 @@ class ProductsView(generics.ListAPIView):
     serializer_class = ProductSerializer
 
 
+class ProductsDetailsView(generics.RetrieveAPIView):
+    """
+    API endpoints allows users to enter inside a product.
+    """
+    queryset = Product.objects.all()
+    serializer_class = ProductDetailsSerializer
 
-# class ProductsDetailsView(generics.RetrieveAPIView):
-#     """
-#     API endpoints allows users to enter inside a product.
-#     """
-#     queryset = Product.objects.all()
-#     serializers_class = ProductDetailsSerializer
+    def get_object(self):
+        product_id = self.kwargs['pk']
+        return Product.objects.get(id=product_id)
+    
+

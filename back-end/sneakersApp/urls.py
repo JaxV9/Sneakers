@@ -9,7 +9,8 @@ router.register(r'pictures', PictureViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
-    path('api/v1/shoes/', ProductsView.as_view(), name='products-list')
+    path('api/v1/shoes/', ProductsView.as_view(), name='products-list'),
+    path('api/v1/shoes/<int:pk>', ProductsDetailsView.as_view(), name='product-details')
 ]
 
 
