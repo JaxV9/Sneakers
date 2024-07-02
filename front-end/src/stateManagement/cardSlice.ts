@@ -62,20 +62,18 @@ export const cartSlice = createSlice({
         });
       }
     },
-    removeFromCart(state, action: PayloadAction<number>) {
-      const shoeIdToRemove = action.payload;
+    removeFromCart(state, action: PayloadAction<ShoeMetadata>) {
+      const shoeIdToRemove = action.payload.id;
       const existingCartItemIndex = state.items.findIndex(
         (item) => item.shoe.id === shoeIdToRemove
       );
-
-      if (existingCartItemIndex !== -1) {
-        const existingCartItem = state.items[existingCartItemIndex];
-        if (existingCartItem.numberInCart > 1) {
-          existingCartItem.numberInCart -= 1;
-        } else {
-          state.items.splice(existingCartItemIndex, 1);
-        }
+      const existingCartItem = state.items[existingCartItemIndex];
+      if (existingCartItem.numberInCart > 1) {
+        existingCartItem.numberInCart -= 1;
+      } else {
+        state.items.splice(existingCartItemIndex, 1);
       }
+      console.log(state.items);
     },
   },
 });
