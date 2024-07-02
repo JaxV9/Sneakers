@@ -16,3 +16,12 @@ class ProductsView(generics.ListAPIView):
     """
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+
+
+# class ProductsDetailsView(generics.RetrieveAPIView):
+#     """
+#     API endpoints allows users to enter inside a product.
+#     """
+#     queryset = Product.objects.all()
+#     serializers_class = ProductDetailsSerializer
