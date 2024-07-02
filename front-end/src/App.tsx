@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from './Layout'
 import { Home } from './features/Home'
 
-function App() {
 
+function App() {
 
   return (
     <>

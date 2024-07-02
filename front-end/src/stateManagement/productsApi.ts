@@ -11,7 +11,7 @@ export interface PictureMetadata{
     path:string;
 }
 
-export const productsSlice = createApi({
+export const productsApi = createApi({
     baseQuery:fetchBaseQuery({baseUrl:"http://localhost:8000/api"}),
     endpoints: (builder) => ({
         getShoes: builder.query<ShoeMetadata[], void[]>({
@@ -23,4 +23,4 @@ export const productsSlice = createApi({
     }),
 })
 
-export const {useGetShoesQuery,useGetShoesByIdQuery} = productsSlice
+export const {useGetShoesQuery,useGetShoesByIdQuery} = productsApi

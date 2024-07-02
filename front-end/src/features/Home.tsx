@@ -1,4 +1,15 @@
+import { useEffect } from "react"
+import { useGetShoesQuery } from "../stateManagement/productsApi"
+
+
+
 export const Home  = () => {
+const {data}=useGetShoesQuery()
+  useEffect(() => {
+    console.log(data)
+  },[data])
+
+    
     return (
         <div className="flex-container space-between w-full">
            <div className="flex-container">
