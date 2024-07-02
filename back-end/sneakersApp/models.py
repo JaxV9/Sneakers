@@ -61,3 +61,18 @@ class User(AbstractUser):
         related_name="user_set_custom",
         related_query_name="user_custom",
     )
+
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    price = models.FloatField()
+    
+    def __str__(self):
+        return self.name
+    
+class Picture(models.Model):
+    path = models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.path.url
+
