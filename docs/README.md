@@ -14,7 +14,7 @@ De plus si nous voulons rajouter des systèmes pour se connecter à ces différe
 
 Pour ce qui est des choix techniques, nous sommes partie sur plusieurs technologies avangardistes et au goût du jour dans l'objectif de proposer au client la meilleur expérience d'utilisation possible.
 
-<img src="./assets/usedstack.png">
+<img src="./assets/Docker architecture.png">
 
 #### Choix front-end
 
@@ -35,4 +35,4 @@ Pour notre POC, nous avons utilisé une base de donnée PostgreSQL.
 
 ## Schéma BDD 🗃
 
-<img src="./">
+<img src="./assets/mcd.jpeg" >
