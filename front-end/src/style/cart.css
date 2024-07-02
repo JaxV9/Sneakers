@@ -1,0 +1,20 @@
+.cart{
+    & .item-card{
+        display: flex;
+        border-bottom: 1px solid #f5f5f5;
+        position: relative;
+        width: 100%;
+
+        & .item-card-title{
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        & .item-card-price{
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #ababab;
+        }
+    }
+
+}

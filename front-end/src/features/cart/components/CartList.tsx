@@ -7,8 +7,8 @@ interface CartListProps {
 
 export const CartList  = (cart:CartListProps) => {
     return (
-        <div className="flex-container flex-vertical">
-            <div className="flex-container">
+        <div className="flex-container flex-vertical w-full space-evenly">
+            <div className="flex-container w-full space-evenly">
                 <span>Articles ajoutés</span>
                 <div className="flex-container">
                     <span>Prix unitaire</span>
@@ -16,7 +16,7 @@ export const CartList  = (cart:CartListProps) => {
                     <span>Total</span>
                 </div>
             </div>
-            <div className="flex-container flex-vertical">
+            <div className="flex-container flex-vertical w-full">
                 {cart.items.map((item) => (
                     <ItemCard 
                         quantity={item.numberInCart}

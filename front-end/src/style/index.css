@@ -1,5 +1,6 @@
 @import "flex.css";
 @import "variables.css";
+@import "cart.css";
 
 body{
     & .page-content{
@@ -23,6 +24,10 @@ body{
 
     & .space-between{
         justify-content: space-between;
+    }
+
+    & .space-evenly{
+        justify-content: space-evenly;
     }
 
     & .logo{

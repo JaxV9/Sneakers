@@ -9,16 +9,20 @@ interface ItemCardProps {
 
 export const ItemCard  = ({shoe,quantity}:ItemCardProps) => {
     return (
-        <div className="flex-container item-card">
-           <button onClick={() => {removeFromCart}}>X</button>
-           {shoe.pictures_product?
-           <img src={shoe.pictures_product} alt={shoe.name} />
-           :
-           ""}
-           <span>{shoe.name}</span>
-            <span>{shoe.price}€</span>
+        <div className="flex-container item-card w-full flex-horizontal space-evenly">
+            <div className="flex-container">
+                <button onClick={() => {removeFromCart}}>X</button>
+                {shoe.pictures_product?
+                <img src={shoe.pictures_product} alt={shoe.name} />
+                :
+                ""}
+                <span className="item-card-title">{shoe.name}</span>
+           </div>
+           <div className="flex-container">
+            <span className="item-card-price">{shoe.price}€</span>
             <span>{quantity}</span>
-            <span>{shoe.price * quantity}€</span>
+            <span className="item-card-price">{shoe.price * quantity}€</span>
+            </div>
         </div>
     )
 }

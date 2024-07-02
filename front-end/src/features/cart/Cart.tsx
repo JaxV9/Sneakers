@@ -9,13 +9,13 @@ export const Cart = () => {
 
     const totalPrice = cart.reduce((total, item) => total + item.shoe.price * item.numberInCart, 0);
     const taxes = totalPrice * TAX_RATE;
-    const totalOrder = totalPrice + taxes;
+    const totalOrder = totalPrice;
 
     return (
-        <div className="flex-container w-full flex-vertical">
+        <div className="flex-container w-full flex-vertical cart">
             <h1>Panier</h1>
             <CartList items={cart} />
-            <div className="flex-container">
+            <div className="flex-container space-evenly w-full">
                 <div className="flex-container flex-vertical">
                     <span>Appliquer code de réduction</span>
                     <div className="flex-container">
