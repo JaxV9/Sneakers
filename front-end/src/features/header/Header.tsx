@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/veja.svg';
+import cart from '../../assets/shopping-cart.png';
 
 export const Header  = () => {
     const navigate = useNavigate()
@@ -20,7 +21,9 @@ export const Header  = () => {
             <div className="flex-container px-4">
                 <div className="flex-container">
                     <span className="header-title">Mon compte</span>
-                    <span className="svg px-2">Cart</span>
+                    <span className="svg px-2" onClick={()=>navigate("/cart")}>
+                        <img src={cart} alt="cart" className='size1'/>
+                    </span>
                 </div>
             </div>
         </div>
