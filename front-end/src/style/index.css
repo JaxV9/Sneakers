@@ -1,6 +1,6 @@
 @import "flex.css";
 @import "variables.css";
-
+@import "card.css";
 body{
     & .page-content{
     width: 100%;

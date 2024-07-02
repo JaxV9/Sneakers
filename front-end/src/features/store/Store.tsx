@@ -1,5 +1,7 @@
+import { Card } from "./components/Card"
+
 export const Store = () => {
     return (
-        <div className="flex-container">Hello</div>
+        <div className="flex-container"><Card /></div>
     )
 }

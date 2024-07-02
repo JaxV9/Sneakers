@@ -1,0 +1,33 @@
+.card-container{
+    position: relative;
+
+    & .card-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* background: rgba(0, 0, 0, 0.5); Semi-transparent background */
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+    
+        & .card-title{
+            text-transform: uppercase;
+            color: #ababab;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        & .card-price{
+            text-transform: uppercase;
+            color: black;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+    & .card-pic{
+        max-height: 300px;
+        border-radius: 5px;
+    }
+
+}
+
