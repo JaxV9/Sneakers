@@ -13,8 +13,8 @@ export const Card = () => {
                 <div className="flex-container flex-vertical">
                     <img src={shoepic} alt="shoe" className="cardImage"/>
                     <div className="cardContentContainer">
-                        <span className="card-title">Chaussure</span>
-                        <span className="card-price">Prix</span>
+                        <span className="card-title">Chaussure</span><br/>
+                        <span className="card-price">150 e</span>
                     </div>
                 </div>
             </div>
