@@ -9,11 +9,11 @@ export const CartList  = (cart:CartListProps) => {
     return (
         <div className="flex-container flex-vertical w-full space-evenly">
             <div className="flex-container w-full space-evenly">
-                <span>Articles ajoutés</span>
+                <span className="card-title">Articles ajoutés</span>
                 <div className="flex-container">
-                    <span>Prix unitaire</span>
-                    <span>Quantité</span>
-                    <span>Total</span>
+                    <span className="card-title">Prix unitaire</span>
+                    <span className="card-title">Quantité</span>
+                    <span className="card-title">Total</span>
                 </div>
             </div>
             <div className="flex-container flex-vertical w-full">
