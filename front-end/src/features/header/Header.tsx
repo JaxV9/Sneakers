@@ -4,22 +4,23 @@ import logo from '../../assets/veja.svg';
 export const Header  = () => {
     const navigate = useNavigate()
     return (
-        <div className="flex-container space-between w-full page-header p-4">
-            <div className="flex-container">
-                <img src={logo} alt="Veja" className="logo" onClick={()=>navigate("/home")}>  
-                </img>
-                <span className='header-title'>Homme</span>
-                <span className='header-title'>Femme</span>
-                <span className='header-title'>Enfant</span>
-                <span className='header-title'>Lookbook</span>
-                <span className='header-title'>Projet</span>
-                <span className='header-title'>Vegan</span>
-                <span className='header-title'>Soldes</span>
+        <div className="flex-container space-between w-full page-header bb-black">
+            <div className="flex-container px-4">
+                <img src={logo} alt="Veja" className="logo" onClick={()=>navigate("/home")}/>  
+                <div className="flex-container px-4">
+                    <span className='header-title px-2'>Homme</span>
+                    <span className='header-title px-2'>Femme</span>
+                    <span className='header-title px-2'>Enfant</span>
+                    <span className='header-title px-2'>Lookbook</span>
+                    <span className='header-title px-2'>Projet</span>
+                    <span className='header-title px-2'>Vegan</span>
+                    <span className='header-title px-2'>Soldes</span>
+                </div>
             </div>
-            <div className="flex-container">
+            <div className="flex-container px-4">
                 <div className="flex-container">
-                    <div className="sub-title">Mon compte</div>
-                    <div className="svg">Cart</div>
+                    <span className="header-title">Mon compte</span>
+                    <span className="svg px-2">Cart</span>
                 </div>
             </div>
         </div>
