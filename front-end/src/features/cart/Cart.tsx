@@ -1,10 +1,13 @@
+import { useSelector } from "react-redux";
 import { CartList } from "./components/CartList"
+import { CartMetadata } from "../../stateManagement/cardSlice";
 
 export const Cart  = () => {
+   const cart = useSelector((state:CartMetadata)=>state.items);
     return (
         <div className="flex-container w-full flex-vertical">
            <h1>Panier</h1>
-           <CartList></CartList>
+           <CartList items={cart}></CartList>
            <div className="flex-container">
             <div className="flex-container flex-vertical">
                 <span>Appliquer code de réduction</span>

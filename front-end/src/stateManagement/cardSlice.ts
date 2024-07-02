@@ -19,6 +19,22 @@ const initialState: CartMetadata = {
     {
       shoe: {
         id: 1,
+        name: 'Red Sneakers',
+        price: 150,
+      },
+      numberInCart: 1,
+    },
+    {
+      shoe: {
+        id: 1,
+        name: 'Green Sneakers',
+        price: 150,
+      },
+      numberInCart: 1,
+    },
+    {
+      shoe: {
+        id: 1,
         name: 'Blue Sneakers',
         price: 150,
       },
