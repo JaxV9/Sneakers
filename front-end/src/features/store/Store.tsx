@@ -1,10 +1,39 @@
+import { useEffect, useState } from "react"
 import { Card } from "./components/Card"
+import { ShoesType } from "../../model/shoes"
+
 
 export const Store = () => {
-    const mockTab = [1,2,3,4,5,6,7,8,9]
+
+    const [shoes, setShoes] = useState<ShoesType[]>([])
+
+    const fetchShoes = async () => {
+        try {
+            let response = await fetch(`http://localhost:8000/api/v1/shoes/`, { cache: 'force-cache' })
+            let data = await response.json()
+            setShoes(data)
+        } catch {
+            console.log("error")
+        }
+    }
+
+    useEffect(() => {
+        fetchShoes()
+    }, [])
+
+
     return (
         <div className="cardsListContainer">
-            {mockTab.map((index)=> <Card key={index}/>)}
+            {
+                shoes.length > 0 ?
+                shoes.map((shoe, index) => (
+                    <div key={index}>
+                    <Card />
+                    </div>
+                ))
+            :
+                    null
+            }
         </div>
     )
 }

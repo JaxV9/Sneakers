@@ -33,9 +33,11 @@ DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
-# CORS_ORIGIN_WHITELIST = (
-#   'http://localhost:5173'
-# )
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+  'http://localhost:5173',
+  'http://localhost:5174',
+)
 
 # Application definition
 
