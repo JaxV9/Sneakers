@@ -15,23 +15,32 @@ export const Projet = () => {
                 <h2>Notre mission</h2>
                 <span className="hashTagContent">#walkforabetterfutur</span>
                 <div className="introProjectContentContainer">
-                    <p>Ce matériau est utilisé dans la
-                        semelle de chaque basket. Nous
-                        achetons le caoutchouc directement
-                        auprès de coopératives formées par
-                        des familles de seringueiros
-                        (récolteurs de caoutchouc).
-                        <br /><br />
-                        Ce matériau est utilisé dans le
-                        aoutchouc.Ce matériau est utilisé dans la
-                        semelle de chaque basket. Nous
-                        achetons le caoutchouc directement
-                        auprès de coopératives formées par
-                        des familles de seringueiros
-                        (récolteurs de caoutchouc).</p>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br/> <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                         <div className="introProjectImage"></div>
                 </div>
-                
+
+                <div className="doubleImagesContainer">
+                    <div className="fDoubleImages"></div>
+                    <div className="sDoubleImages"></div>
+                </div>
+
+                <div className="festivalContainer">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </section>
         </>
     )

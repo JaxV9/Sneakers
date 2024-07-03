@@ -61,7 +61,7 @@
 .introProjectContentContainer {
     height: fit-content;
     margin-top: 28px;
-    margin-bottom: 28px;
+    margin-bottom: 50px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -84,4 +84,47 @@
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: cover;
+}
+
+.doubleImagesContainer {
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.fDoubleImages {
+    background-image: url('../../assets/backgroundContent1.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sDoubleImages {
+    background-image: url('../../assets/backgroundContent2.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.festivalContainer {
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 28px;
+}
+
+.festivalContainer > div {
+    background-image: url('../../assets/paperTexture.png');
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
 }
