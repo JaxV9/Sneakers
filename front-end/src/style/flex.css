@@ -16,3 +16,7 @@
 
 }
 
+.flex-vertical {
+    flex-direction: column;
+}
+

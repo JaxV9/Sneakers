@@ -3,9 +3,12 @@
 
 @import "flex.css";
 @import "variables.css";
-@import "card.css";
+@import "cart.css";
+
+
 body{
     font-family: "Open Sans", sans-serif;
+
     & .page-content{
     width: 100%;
     height: 100%;
@@ -27,6 +30,10 @@ body{
 
     & .space-between{
         justify-content: space-between;
+    }
+
+    & .space-evenly{
+        justify-content: space-evenly;
     }
 
     & .logo{

@@ -72,7 +72,7 @@ class Product(models.Model):
     
 class Picture(models.Model):
     path = models.ImageField(upload_to='images/')
-
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="pictures_product", null=True)
+    
     def __str__(self):
         return self.path.url
-

@@ -4,9 +4,8 @@
 
 ## How to launch 
 
-À la racine du projet, exécutez :
+At the root of the project, run :
 
-bash
 ```
 docker compose up -d --build
 ```

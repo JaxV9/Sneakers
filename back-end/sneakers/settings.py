@@ -37,7 +37,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:5173',
   'http://localhost:5174',
-)
 
 # Application definition
 
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_yasg',
     'corsheaders',
     'sneakersApp',
     'rest_framework_simplejwt',
