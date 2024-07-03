@@ -4,7 +4,11 @@ export interface ShoeMetadata {
   id: number;
   name: string;
   price: number;
-  pictures_product?: string;
+  pictures_product?:
+    {
+        id: number,
+        path: string
+    }[]
 }
 export interface CartItem {
   shoe: ShoeMetadata;
@@ -15,32 +19,7 @@ export interface CartMetadata {
 }
 
 const initialState: CartMetadata = {
-  items: [
-    {
-      shoe: {
-        id: 1,
-        name: 'Red Sneakers',
-        price: 150,
-      },
-      numberInCart: 1,
-    },
-    {
-      shoe: {
-        id: 1,
-        name: 'Green Sneakers',
-        price: 150,
-      },
-      numberInCart: 1,
-    },
-    {
-      shoe: {
-        id: 1,
-        name: 'Blue Sneakers',
-        price: 150,
-      },
-      numberInCart: 1,
-    },
-  ],
+  items: [],
 };
 
 export const cartSlice = createSlice({
@@ -62,8 +41,8 @@ export const cartSlice = createSlice({
         });
       }
     },
-    removeFromCart(state, action: PayloadAction<number>) {
-      const shoeIdToRemove = action.payload;
+    removeFromCart(state, action: PayloadAction<ShoeMetadata>) {
+      const shoeIdToRemove = action.payload.id;
       const existingCartItemIndex = state.items.findIndex(
         (item) => item.shoe.id === shoeIdToRemove
       );
