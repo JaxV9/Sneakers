@@ -5,10 +5,10 @@ import { useGetShoesQuery } from "../stateManagement/productsApi"
 
 export const Home  = () => {
 const {data}=useGetShoesQuery()
-  useEffect(() => {
-    console.log(data)
-  },[data])
-
+//   useEffect(() => {
+//     console.log(data)
+//   },[data])
+console.log(data)
     
     return (
         <div className="flex-container space-between w-full">

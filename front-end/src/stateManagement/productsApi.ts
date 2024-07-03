@@ -14,7 +14,7 @@ export interface PictureMetadata{
 export const productsApi = createApi({
     baseQuery:fetchBaseQuery({baseUrl:"http://localhost:8000/api"}),
     endpoints: (builder) => ({
-        getShoes: builder.query<ShoeMetadata[], void[]>({
+        getShoes: builder.query<ShoeMetadata[], void>({
           query: () => `/v1/shoes/`,
         }),
         getShoesById: builder.query<ShoeMetadata,{id:number}>({
