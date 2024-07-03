@@ -5,11 +5,11 @@
 @import "variables.css";
 @import "cart.css";
 @import "card.css";
-
+@import url('../features/Projet/style.css');
+@import url('../features/header/style.css');
 
 body{
     font-family: "Open Sans", sans-serif;
-
     & .page-content{
     width: 100%;
     height: 100%;
@@ -20,11 +20,6 @@ body{
             position: fixed;
             top: 0px;
             left: 0px;
-            border-bottom: 10px red;
-        }
-
-        & .content{
-            margin-top: 85px;
         }
     }
 
@@ -89,6 +84,8 @@ body{
         }
     }
 
-   
+}
 
+body, html {
+    margin: 0px;
 }

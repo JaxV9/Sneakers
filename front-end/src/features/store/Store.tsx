@@ -26,12 +26,10 @@ export const Store = () => {
         <div className="cardsListContainer">
             {
                 shoes.length > 0 ?
-                shoes.map((shoe, index) => (
-                    <div key={index}>
-                    <Card shoeProps={shoe}/>
-                    </div>
-                ))
-            :
+                    shoes.map((shoe, index) => (
+                        <Card key={index} shoeProps={shoe} />
+                    ))
+                    :
                     null
             }
         </div>

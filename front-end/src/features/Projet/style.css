@@ -1,0 +1,11 @@
+.heroProjectContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.heroBackgroundImage {
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+}

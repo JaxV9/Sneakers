@@ -5,6 +5,7 @@ import { Home } from './features/Home'
 import { Store } from './features/store/Store'
 
 import { Cart } from './features/cart/Cart'
+import { Projet } from './features/Projet/Projet'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
             <Route path="/store" element={<Store />} />  
 
             <Route path="/cart" element={<Cart />} /> 
+
+            <Route path="/projet" element={<Projet />} /> 
 
             {/* Add more routes here as needed */}
         </Route>

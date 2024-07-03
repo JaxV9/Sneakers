@@ -1,5 +1,4 @@
 import { Outlet } from "react-router"
-import { Footer } from "./features/header/Footer"
 import { Header } from "./features/header/Header"
 
 export const Layout  = () => {
@@ -10,7 +9,6 @@ export const Layout  = () => {
                     <div className="content">
                         <Outlet /> 
                     </div>
-                <Footer />
             </div>
         </>
     )

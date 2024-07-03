@@ -1,4 +1,3 @@
-import shoepic from '../../../assets/vejamock.jpg';
 import { ShoesType } from '../../../model/shoes';
 
 type CardPropsType = {
@@ -12,10 +11,10 @@ export const Card = ({shoeProps}: CardPropsType) => {
         <div className="card-container">
             <div className="flex-container">
                 <div className="flex-container flex-vertical">
-                    <img src={shoepic} alt="shoe" className="cardImage"/>
+                    <img src={shoeProps.pictures_product[0].path } alt="shoe" className="cardImage"/>
                     <div className="cardContentContainer">
                         <span className="card-title">{shoeProps.name}</span><br/>
-                        <span className="card-price">{shoeProps.price}</span>
+                        <span className="card-price">{shoeProps.price} €</span>
                     </div>
                 </div>
             </div>
