@@ -113,7 +113,7 @@
 }
 
 .festivalContainer {
-    height: 600px;
+    height: fit-content;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,9 +122,37 @@
     row-gap: 28px;
 }
 
-.festivalContainer > div {
+.festivalCard {
     background-image: url('../../assets/paperTexture.png');
     height: 100%;
     width: 100%;
     opacity: 0.8;
+    transition: all ease 0.2s;
+    border-radius: 8px;
+}
+
+.festivalCard:hover {
+    scale: 1.01;
+    transition: all ease 0.2s;
+}
+
+.festivalCard > span {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.festivalCard > p {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
 }
