@@ -72,6 +72,21 @@ export const Projet = () => {
 
                 <h2>Comment Veja recycles les déchets plastiques pour produire des sneakers durables</h2>
                 <Article />
+                <h2>Nombre de plastique ramassé en tonne</h2>
+                <div className="ecoContentContainer">
+                    <div className="ecoContent">
+                        <div>
+                            <span className="ecoValue">350</span>
+                            <span className="ecoUnit"> tonnes</span>
+                        </div>
+                        <p>
+                            Sebastião a grandi dans une communauté de l'Amazonie en regardant son père travailler comme récolteur de caoutchouc.
+                        </p>
+                    </div>
+                    <div className="ecoImage">
+
+                    </div>
+                </div>
             </section>
         </>
     )

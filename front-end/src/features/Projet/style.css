@@ -36,7 +36,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 500px;
 }
 
 .projectContentContainer > h2 {
@@ -155,4 +155,56 @@
     font-size: 14px;
     line-height: 150%;
     font-weight: 500;
+}
+
+.ecoContentContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.ecoContent {
+    background-image: url('../../assets/paperTexture.png');
+    height: fit-content;
+    width: fit-content;
+    opacity: 0.8;
+    padding: 50px 0 150px;
+}
+
+.ecoContent > div {
+    width: 60%;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ecoValue {
+    font-size: 107px;
+}
+
+.ecoUnit {
+    font-size: 47px;
+}
+
+.ecoContent > p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.ecoImage {
+    width: 583px;
+    height: 650px;
+    background-image: url('../../assets/mapImage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
