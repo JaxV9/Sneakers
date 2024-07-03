@@ -1,0 +1,53 @@
+.cardsListContainer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 16px;
+    row-gap: 16px;
+    margin-bottom: 28px;
+    transition: all ease 0.2s;
+}
+
+.card-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+    animation: fadeIn 0.5s ease-in;
+    cursor: pointer;
+    animation: fadeIn 0.2s ease-in;
+}
+
+.card-container:hover {
+    scale: 1.02;
+    transition: all ease 0.2s;
+}
+
+.cardImage {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cardContentContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-title {
+    color: #ABABAB;
+}
+
+.card-price {
+    color: #000000;
+    font-weight: 500;
+}

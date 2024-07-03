@@ -1,13 +1,19 @@
 .flex-container{
     display:flex;
     align-items: center;
-    justify-content:center ;
-    & .flex-vertical {
+    border-radius: 5px;
+    
+    & .flex-vertical{
         flex-direction: column;
     }
-    & .flex-horizontal {
-        flex-direction: row;
-    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    column-gap: 16px;
+    row-gap: 16px;
+
 }
 
 .flex-vertical {
