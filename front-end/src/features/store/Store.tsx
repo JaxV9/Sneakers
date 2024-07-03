@@ -28,7 +28,7 @@ export const Store = () => {
                 shoes.length > 0 ?
                 shoes.map((shoe, index) => (
                     <div key={index}>
-                    <Card />
+                    <Card shoeProps={shoe}/>
                     </div>
                 ))
             :
