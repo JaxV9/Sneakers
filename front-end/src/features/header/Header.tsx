@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <div className="headerContainer">
             <div className='logoHeaderContainer'>
-                <img src={logo} alt="Veja" className="logo" onClick={() => navigate("/home")} />
+                <img src={logo} alt="Veja" className="logo" onClick={() => navigate("/")} />
             </div>
             <div className="navHeaderLink">
                 <span className='header-title px-2' onClick={() => navigate("/store")}>Homme</span>
