@@ -7,10 +7,14 @@ while ! nc -z db 5432; do
 done
 echo "Base de données démarrée"
 
-# Exécuter les migrations Django
+# Exécution des migrations Django
 echo "Exécution des migrations Django..."
 python manage.py migrate --noinput
 
-# Démarrer le serveur Django
+#création des fausses données
+
+python fake_data.py
+
+# Démarrage du serveur Django
 echo "Démarrage du serveur Django..."
 exec "$@"
