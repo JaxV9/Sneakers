@@ -23,6 +23,7 @@
     animation: fadeIn 0.5s ease-in;
     cursor: pointer;
     animation: fadeIn 0.2s ease-in;
+    background-color: #F4F4F6;
 }
 
 .card-container:hover {
@@ -31,16 +32,19 @@
 }
 
 .cardImage {
-    width: 100%;
-    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cardContentContainer {
     width: 100%;
-    position: absolute;
-    bottom: 8px;
     text-align: center;
     font-size: 18px;
+    padding: 16px 8px;
+    margin-top: -28px;
 }
 
 .card-title {

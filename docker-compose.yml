@@ -12,6 +12,7 @@ services:
   web:
     container_name: sneakers-back-end
     build: ./back-end/
+    entrypoint: /usr/src/app/entrypoint.sh
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./back-end/:/usr/src/app
