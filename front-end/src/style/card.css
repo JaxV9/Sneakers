@@ -40,11 +40,12 @@
 }
 
 .cardContentContainer {
-    width: 100%;
+    width: 95%;
     text-align: center;
     font-size: 18px;
-    padding: 16px 8px;
-    margin-top: -28px;
+    margin-top: -16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-title {
@@ -55,4 +56,23 @@
 .card-price {
     color: #000000;
     font-weight: 500;
+}
+
+.addProductBtn {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.addProductBtn:hover {
+    scale: 1.02;
+    transition: all ease 0.2s;
+    background-color: #54d750;
+    color: #ffffff;
 }

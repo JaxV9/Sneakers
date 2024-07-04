@@ -16,7 +16,7 @@ export const Card = ({ shoeProps }: CardPropsType) => {
                 <div className="cardContentContainer">
                     <span className="card-title">{shoeProps.name}</span><br />
                     <span className="card-price">{shoeProps.price} €</span><br />
-                    <button onClick={() => dispatch(addToCart(shoeProps))}>Ajouter</button>
+                    <button className='addProductBtn' onClick={() => dispatch(addToCart(shoeProps))}>Ajouter</button>
                 </div>
         </div>
     )
