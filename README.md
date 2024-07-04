@@ -6,7 +6,7 @@ Vous trouverez dans ce dossier toute la documentation technique du projet ainsi 
 
 ➡️ 🖥 [Code source](https://github.com/JaxV9/Sneakers)
 
-➡️ 📚 [Documentation technique](https://github.com/JaxV9/Sneakers/tree/feat2-Documentation/docs)
+➡️ 📚 [Documentation technique](https://github.com/JaxV9/Sneakers)
 
 ## Project's architecture
 
