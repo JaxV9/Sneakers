@@ -4,7 +4,7 @@ export interface ShoeMetadata {
   id: number;
   name: string;
   price: number;
-  pictures_product?:
+  pictures_product:
     {
         id: number,
         path: string

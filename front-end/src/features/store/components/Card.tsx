@@ -12,7 +12,7 @@ export const Card = ({ shoeProps }: CardPropsType) => {
 
     return (
         <div className="card-container">
-                <div className='cardImage' style={{backgroundImage: `url(${shoeProps.pictures_product && shoeProps.pictures_product[0]?.path})`}}></div>
+                <div className='cardImage' style={{backgroundImage: `url(${shoeProps.pictures_product[0].path})`}}></div>
                 <div className="cardContentContainer">
                     <span className="card-title">{shoeProps.name}</span><br />
                     <span className="card-price">{shoeProps.price} €</span><br />
