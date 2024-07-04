@@ -25,8 +25,5 @@ class ProductsDetailsView(generics.RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductDetailsSerializer
 
-    def get_object(self):
-        product_id = self.kwargs['pk']
-        return Product.objects.get(id=product_id)
     
 
